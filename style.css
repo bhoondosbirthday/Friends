@@ -1,0 +1,626 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.loaderBackground1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 1002;
+    background: red;
+}
+
+.loaderBackground2 {
+    position: fixed;
+    left: 20%;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 1002;
+    background: skyblue;
+}
+
+.loaderBackground3 {
+    position: fixed;
+    left: 40%;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 1002;
+    background: orange;
+}
+
+.loaderBackground4 {
+    position: fixed;
+    left: 60%;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 1002;
+    background: green;
+}
+
+.loaderBackground5 {
+    position: fixed;
+    left: 80%;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 1002;
+    background: yellow;
+}
+
+.loaderBackgroundAnimation1 {
+    animation: loaderUp 1s ease-in-out 1.5s forwards;
+}
+
+@keyframes loaderUp {
+    0% {
+        top: 0;
+
+    }
+
+    100% {
+        top: -150vh;
+    }
+}
+
+.loaderBackgroundAnimation2 {
+    animation: loaderUp 1s ease-in-out 3.5s forwards;
+}
+
+.loaderBackgroundAnimation3 {
+    animation: loaderUp 1s ease-in-out 4.5s forwards;
+}
+
+.loaderBackgroundAnimation4 {
+    animation: loaderUp 1s ease-in-out 5.5s forwards;
+}
+
+.loaderBackgroundAnimation5 {
+    animation: loaderUp 1s ease-in-out 6.5s forwards;
+}
+
+@keyframes loaderUp {
+    0% {
+        top: 0;
+
+    }
+
+    100% {
+        top: -150vh;
+    }
+}
+
+
+.navbar {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: colorChange 4s linear infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #ffbcbc9e;
+    }
+
+    10% {
+        background-color: #ffbce79e;
+    }
+
+    20% {
+        background-color: #e2bcff9e;
+    }
+
+    30% {
+        background-color: #bcc1ff9e;
+    }
+
+    40% {
+        background-color: #bcfcff9e;
+    }
+
+    50% {
+        background-color: #bcffc79e;
+    }
+
+    60% {
+        background-color: #d6ffbc9e;
+    }
+
+    60% {
+        background-color: #feffbc9e;
+    }
+
+    70% {
+        background-color: #ffedbc9e;
+    }
+
+    80% {
+        background-color: #ffd5bc9e;
+    }
+
+    90% {
+        background-color: #ffbcbc9e;
+    }
+
+    100% {
+        background-color: #ffbcbc9e;
+    }
+
+}
+
+.navbar img {
+    transform: scale(0.9);
+}
+
+
+.Header {
+    position: relative;
+}
+
+source {
+    height: 100vh;
+    width: 100vw;
+}
+
+video {
+    height: 100vh;
+    width: 100vw;
+}
+
+.Headerbackground {
+    width: 100vw;
+    height: 100vh;
+}
+
+.headerContent {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerHeading {
+    font-size: 5rem;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.friendsHeading {
+    font-family: "Caveat";
+}
+
+.audio {
+    text-align: center;
+}
+
+
+
+
+.headerIcon {
+    color: rgb(131, 35, 35);
+    font-weight: 800;
+    font-size: 5rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.829);
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.lighteningIcon {
+    height: 500px;
+}
+
+.lighteningPlay {
+    padding: 2vw;
+    font-size: 10rem;
+    text-shadow: 0 0 10px rgb(231, 59, 59);
+}
+
+#backgroundVideo {
+    height: 60%;
+    width: auto;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 5px white;
+}
+
+.fearsandpetpeevesdiv {
+    /* background: fixed url(files/cockroach.jpg) repeat ; */
+    width: 100%;
+}
+
+.youtubeVideo {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.closeIcon {
+    font-size: 5rem;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0px 0px 10px #A42C5B;
+
+}
+
+.expectationSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.questionBankRow {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+}
+
+
+.questionBank {
+    padding: 2vw;
+}
+
+.questionbankheading {
+    font-family: "Caveat";
+    font-size: 3rem;
+}
+
+.normalHeading {
+    font-size: 6rem;
+    text-align: center;
+}
+
+.questionCard {
+    color: white;
+    width: 40vw;
+    height: 25vw;
+    font-size: 2rem;
+    font-family: "Caveat";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    border-radius: 25px;
+}
+
+.bonussection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fearsrow .questionCard {
+    background-color: #3D6765;
+}
+
+.historyrow .questionCard {
+    background-color: #A42C5B;
+}
+
+.literaturerow .questionCard {
+    background-color: #b89a55;
+}
+
+.relativerow .questionCard {
+    background-color: #602D50;
+}
+
+.questionCard p {
+    text-align: center;
+}
+
+.questionCard .button {
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+.questionCard .button:hover {
+    background-color: white;
+    color: #3D6765;
+    cursor: pointer;
+}
+
+.outerButton {
+    text-align: center;
+    background-color: #A62A21;
+    font-size: 1.5rem;
+    width: 190px;
+    padding: 15px 15px;
+    border-radius: 50px;
+    color: white;
+    border: 1px solid white;
+}
+
+
+.productSection {
+    background-color: rgba(0, 0, 0, 0.788);
+    width: 100vw;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productImg {
+    width: 90px;
+    height: 90px;
+}
+
+.productheading {
+    font-size: 4rem;
+    color: white;
+}
+
+.productImgDiv {
+    margin: 20px 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.1s linear;
+}
+
+.productImgDiv:hover {
+    transform: scale(1.05);
+}
+
+.productsRow {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+
+.scheduleSection {
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+.scheduleCardsWrapper {
+
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    /* animation: schedulelideAnimation 2s ease-in 2s ; */
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+.scheduleHeading {
+
+    font-size: 4rem;
+}
+
+.scheduleCard {
+    background-color: white;
+    border: #263238 1px solid;
+    margin: 10%;
+    padding: 6%;
+    min-height: 60vh;
+    /* max-width: 50%; */
+    position: relative;
+    border-radius: 50px;
+    /* box-shadow: 0 0 15px 5px rgba(128, 128, 128, 0.288); */
+    font-weight: 400;
+    transition: all ease 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.scheduleCardSpeaker {
+    font-weight: 500;
+    color: #263238;
+}
+
+.scheduleCardHeading {
+    color: #263238;
+}
+
+.scheduleCard:hover {
+    /* color: white; */
+    background-color: #FDD663;
+}
+
+.scheduleCard:hover .scheduleCardHeading,
+.scheduleCard:hover .scheduleCardSpeaker {
+    color: #263238;
+}
+
+.scheduleCard:hover .scheduleCardPara {
+    color: #263238;
+}
+
+/* owl carousel dots color */
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #a62a217a !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #A62A21 !important;
+}
+
+
+footer {
+    padding: 2vw 4vw;
+    height: 40vh;
+    background-color: #263238;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: space-around;
+}
+
+.googleFooterHeading {
+    font-size: 2rem;
+    color: white;
+}
+
+.copyrightFooter {
+    text-align: center;
+}
+
+.expectationHeading {
+    text-align: center;
+}
+
+.productheading {
+    text-align: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.registerForm {
+    padding: 3vw;
+    border-radius: 25px;
+    border-top: blue 2px solid;
+    border-right: red 2px solid;
+    border-bottom: yellow 2px solid;
+    border-left: green 2px solid;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.formbackground {
+    background: url(images/IO-header.gif);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+
+.registerbutton {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: crimson;
+    color: white;
+    font-weight: 600;
+    transition: all 0.1s linear;
+
+}
+
+.button {
+    text-align: center;
+}
+
+label {
+    color: crimson;
+    font-weight: 500;
+}
+
+input[type="radio"] {
+    margin: 5px;
+}
+
+.registerbutton:hover {
+    border: 1px crimson solid;
+    background-color: white;
+    color: crimson;
+}
+
+.registerHeading {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.formSection {
+
+    position: relative;
+}
+
+.formContent {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.76);
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media screen and (max-width:650px) {
+
+    .navbar-expand {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .productheading {
+        text-align: center;
+    }
+
+    .expectaionCardHeading {
+        margin: 20px auto;
+    }
+
+    .expectationHeading {
+        text-align: center;
+    }
+
+    .expectationRow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expectationCard {
+        width: 80%;
+        margin-top: 5vw;
+    }
+}
